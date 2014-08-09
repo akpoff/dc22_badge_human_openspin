@@ -25,6 +25,7 @@ help : banner-display
 all : binary
 
 binary : *.spin
+	@mkdir -p build
 	$(SPIN)  dc22_badge_human.spin -o $(BINARY)
 
 clean : 
