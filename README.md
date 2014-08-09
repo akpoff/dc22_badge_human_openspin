@@ -18,3 +18,10 @@ Edit the Makefile if you're spin compiler isn't in /opt/parallax/bin.
 You'll also want to put bstl in /opt/parallax/bin (or, edit the Makefile).
 
 Lastly, on OS X you'll want to get bstl-0.07-pre1 to download 
+
+## LICENSE
+The project is under the MIT license. The code came from Parallax,
+Jon "JonnyMac" McPhalen and Ryan "1o57" Clarke and was already under the MIT
+license.
+
+I added the build system and licensed it under the same terms.
