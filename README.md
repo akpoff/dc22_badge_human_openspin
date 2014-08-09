@@ -37,7 +37,7 @@ the eeprom image from the badge.
 * show license                     == make license
 * connect to badge via terminal    == make term
 
-## Variables
+## Make Variables
 * BSTL="/opt/parallax/bin/bstl"
 * BINARY="build/dc22_badge_human.binary"
 * FACTORY="factory/dc22_badge_human.binary"
