@@ -15,10 +15,11 @@
 
 BANNER="DefCon 22 Badge"
 BSTL="/opt/parallax/bin/bstl"
-DEV=""
+# replace with your tty badge dev
+# DEV="/dev/tty.usb" <-- device name
 BINARY="build/dc22_badge_human.binary"
 FACTORY="factory/dc22_badge_human.binary"
-TERM="/usr/local/bin/minicom"
+TERMCMD="/usr/local/bin/minicom"
 RM="rm"
 SPIN="/opt/parallax/bin/openspin"
 
@@ -49,7 +50,7 @@ install_ram : all
 	$(BSTL) -p1 $(BINARY)
 
 term :
-	$(TERM) -b 57600 -w -D
+	$(TERMCMD) -b 57600 -w -D $(DEV)
 
 banner-display :
 	@echo "[H[2J[33;1m$(BANNER)[0m"
