@@ -10,7 +10,7 @@ OpenSpin.
 
 ## Getting OpenSpin
 The easiest way is to download SimpleIde -
-http://learn.parallax.com/node/640.
+http://learn.parallax.com/node/640
 
 ## Using
 Type `make` or `make help` to list build targets (see next section
@@ -21,7 +21,7 @@ Edit the Makefile if you're spin compiler isn't in /opt/parallax/bin.
 You'll also want to put bstl in /opt/parallax/bin (or, edit the
 location in the Makefile).
 
-Lastly, on OS X get at least bstl-0.07-pre1 if youw ant to download
+Lastly, on OS X get at least bstl-0.07-pre1 if you want to download
 the eeprom image from the badge.
 
 ## Make Targets
