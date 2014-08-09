@@ -3,6 +3,15 @@
 A command-line project for working with the DefCon 22 Human Badge and
 OpenSpin.
 
+## Overview
+dc22_badge_human_openspin isn't intended to be an active development
+project for various badge hacks. It's meant to provide an easy
+template for users to start their own command line project or use in
+their favorite editor (emacs v vi).
+
+Push requests should address the build environment (mainly the
+Makefile).
+
 ## Requirements
 * OpenSpin compiler - https://code.google.com/p/open-source-spin-compiler/
 * Brad's Spin Tools loader (bstl) - http://www.fnarfbargle.com/bst.html
