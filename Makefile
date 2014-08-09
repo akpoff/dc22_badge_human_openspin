@@ -16,7 +16,7 @@
 BANNER="DefCon 22 Badge"
 BSTL="/opt/parallax/bin/bstl"
 # replace with your tty badge dev
-# DEV="/dev/tty.usb" <-- device name
+# DEV="/dev/tty.usb" <-- You device name
 BINARY="build/dc22_badge_human.binary"
 FACTORY="factory/dc22_badge_human.binary"
 TERMCMD="/usr/local/bin/minicom"
@@ -72,6 +72,7 @@ banner-display :
 	@echo "[33;1mVariables[0m"
 	@echo " "
 	@echo "	[31;1mBSTL=[0m\"/opt/parallax/bin/bstl\""
+	@echo "	[31;1mDEV=[0m\"/dev/tty.usb?\" <-- Your device name"
 	@echo "	[31;1mBINARY[0m=\"build/dc22_badge_human.binary\""
 	@echo "	[31;1mFACTORY[0m=\"factory/dc22_badge_human.binary\""
 	@echo "	[31;1mTERM[0m=\"/usr/local/bin/minicom\""
