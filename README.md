@@ -7,9 +7,14 @@ A command-line project for working with the DefCon 22 Human Badge and OpenSpin.
 * Brad's Spin Tools loader (bstl) - http://www.fnarfbargle.com/bst.html
 * Minicom (or equivalent) for connecting
 
+## Getting OpenSpin
+The easiest way is to download SimpleIde - http://learn.parallax.com/node/640.
+
 ## Using
 Type `make` or `make help` to read build instructions.
 
 Edit the Makefile if you're spin compiler isn't in /opt/parallax/bin.
 
-You'll also want to put bstl in /opt/parallax/bin.
+You'll also want to put bstl in /opt/parallax/bin (or, edit the Makefile).
+
+Lastly, on OS X you'll want to get bstl-0.07-pre1 to download 
