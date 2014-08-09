@@ -24,6 +24,12 @@ location in the Makefile).
 Lastly, on OS X get at least bstl-0.07-pre1 if you want to download
 the eeprom image from the badge.
 
+## Terminal
+The Makefile includes a target for connecting to the badge with
+minicom (`make term`). Every badge will connect with a different
+device name. You'll need to edit the Makefile `DEV` variable, set it
+in your environement or pass it in on the command line.
+
 ## Make Targets
 * `make all` == make dc22_badge_human.binary
 * `make binary` == make dc22_badge_human.binary
