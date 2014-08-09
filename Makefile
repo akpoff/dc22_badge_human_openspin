@@ -16,9 +16,10 @@
 BANNER="DefCon 22 Badge"
 BSTL="/opt/parallax/bin/bstl"
 BINARY="build/dc22_badge_human.binary"
+FACTORY="factory/dc22_badge_human.binary"
 TERM="/usr/local/bin/minicom"
 RM="rm"
-SPIN=/opt/parallax/bin/openspin
+SPIN="/opt/parallax/bin/openspin"
 
 help : banner-display
 
@@ -33,6 +34,9 @@ clean :
 
 download :
 	$(BSTL) -u $(BINARY)
+
+factory :
+	$(BSTL) -p3 $(BINARY)
 
 install : install_ram
 
@@ -50,16 +54,26 @@ banner-display :
 	@echo " "
 	@echo "This makefile will attempt to build the components of the indicated module(s)."
 	@echo " "
-	@echo "	make dc22_badge_human.binary == [31;1mall[0m"
-	@echo "	make dc22_badge_human.binary == [31;1mbinary[0m"
-	@echo "	clean-up                     == [31;1mclean[0m"
-	@echo "	download eeprom image        == [31;1mdownload[0m"
-	@echo "	help -- this message         == [31;1mhelp[0m"
-	@echo "	install to badge ram         == [31;1minstall[0m"
-	@echo "	install to badge eeprom      == [31;1minstall_eeprom[0m"
-	@echo "	install to badge ram         == [31;1minstall_ram[0m"
-	@echo "	license                      == [31;1mlicense[0m"
-	@echo "	start term                   == [31;1mterm[0m"
+	@echo "	make dc22_badge_human.binary     == [31;1mmake all[0m"
+	@echo "	make dc22_badge_human.binary     == [31;1mmake binary[0m"
+	@echo "	clean-up                         == [31;1mmake clean[0m"
+	@echo "	download eeprom image            == [31;1mmake download[0m"
+	@echo "	help -- this message             == [31;1mmake help[0m"
+	@echo "	restore factory binary to eeprom == [31;1mmake factory[0m"
+	@echo "	install to badge ram             == [31;1mmake install[0m"
+	@echo "	install to badge eeprom          == [31;1mmake install_eeprom[0m"
+	@echo "	install to badge ram             == [31;1mmake install_ram[0m"
+	@echo "	show license                     == [31;1mmake license[0m"
+	@echo "	connect to badge via terminal    == [31;1mmake term[0m"
+	@echo " "
+	@echo "[33;1mVariables[0m"
+	@echo " "
+	@echo "	[31;1mBSTL=[0m\"/opt/parallax/bin/bstl\""
+	@echo "	[31;1mBINARY[0m=\"build/dc22_badge_human.binary\""
+	@echo "	[31;1mFACTORY[0m=\"factory/dc22_badge_human.binary\""
+	@echo "	[31;1mTERM[0m=\"/usr/local/bin/minicom\""
+	@echo "	[31;1mRM[0m=\"rm\""
+	@echo "	[31;1mSPIN[0m=\"/opt/parallax/bin/openspin\""
 	@echo " "
 
 license :
