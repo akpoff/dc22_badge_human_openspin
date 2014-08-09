@@ -12,6 +12,8 @@ their favorite editor (emacs v. vi).
 Push requests should address the build environment (mainly the
 Makefile).
 
+Fork it and have fun!
+
 ## Requirements
 * OpenSpin compiler - https://code.google.com/p/open-source-spin-compiler/
 * Brad's Spin Tools loader (bstl) - http://www.fnarfbargle.com/bst.html
