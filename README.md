@@ -56,6 +56,7 @@ in your environement or pass it in on the command line.
 
 ## Make Variables
 * `BSTL="/opt/parallax/bin/bstl"`
+* `DEV="/dev/tty.usb?"` <-- Your device name`
 * `BINARY="build/dc22_badge_human.binary"`
 * `FACTORY="factory/dc22_badge_human.binary"`
 * `TERM="/usr/local/bin/minicom"`
