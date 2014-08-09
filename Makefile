@@ -15,6 +15,7 @@
 
 BANNER="DefCon 22 Badge"
 BSTL="/opt/parallax/bin/bstl"
+DEV=""
 BINARY="build/dc22_badge_human.binary"
 FACTORY="factory/dc22_badge_human.binary"
 TERM="/usr/local/bin/minicom"
@@ -34,7 +35,7 @@ clean :
 
 download :
 	@mkdir -p factory
-	$(BSTL) -u $(BINARY)
+	$(BSTL) -u $(FACTORY)
 
 factory :
 	$(BSTL) -p3 $(BINARY)
