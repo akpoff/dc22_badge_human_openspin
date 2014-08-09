@@ -33,6 +33,7 @@ clean :
 	$(RM) -f $(BINARY)
 
 download :
+	@mkdir -p factory
 	$(BSTL) -u $(BINARY)
 
 factory :
